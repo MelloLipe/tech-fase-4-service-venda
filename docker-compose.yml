@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  servico-vendas:
+    build: .
+    ports:
+      - "8001:8001"
+    environment:
+      - DATABASE_URL=sqlite:///./sales_service.db
+      - MAIN_SERVICE_URL=http://host.docker.internal:8000
