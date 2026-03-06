@@ -73,7 +73,7 @@ docker-compose up --build
 ### Executar testes
 
 ```bash
-pytest tests/ -v
+python -m pytest -v
 ```
 
 ### Executar testes com cobertura
